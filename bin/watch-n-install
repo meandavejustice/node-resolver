@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+var watch = require('../index');
+var minimist = require('minimist');
+var fs = require('fs');
+var path = require('path');
+
+var argv = minimist(process.argv.slice(2), {
+    alias: { h: 'help' }
+});
+
+function printHelp() {
+  fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
+}
+
+if (argv.help) {
+  printHelp();
+  return;
+} else {
+  var arg = argv._[0];
+
+  if (!arg) {
+    console.log('Must pass a path argument. \n \n');
+    printHelp();
+    return;
+  }
+
+  watch(path.resolve(arg));
+}

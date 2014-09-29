@@ -1,0 +1,8 @@
+usage: watch-n-install {OPTIONS}
+
+  Watch a Directory of files to install required node_modules in the background.
+       Accepts: Path/to/Directory
+
+OPTIONS are:
+
+  -h, --help   Display this usage info
