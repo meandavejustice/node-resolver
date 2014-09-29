@@ -1,0 +1,39 @@
+{
+  "name": "node-resolver",
+  "version": "0.1.0",
+  "description": "a process to listen for filechanges and install node-modules",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^0.9.0",
+    "find-modules": "^0.1.0",
+    "is-core-module": "^1.0.2",
+    "minimist": "^1.1.0",
+    "strip-comments": "^0.3.2",
+    "async": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meandavejustice/node-resolver.git"
+  },
+  "keywords": [
+    "node",
+    "modules",
+    "require",
+    "watch",
+    "background",
+    "process",
+    "editors",
+    "convenience",
+    "tools"
+  ],
+  "author": "meandave",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meandavejustice/node-resolver/issues"
+  },
+  "homepage": "https://github.com/meandavejustice/node-resolver"
+}
