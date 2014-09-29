@@ -1,4 +1,4 @@
-usage: watch-n-install {OPTIONS}
+usage: node-resolver {OPTIONS}
 
   Watch a Directory of files to install required node_modules in the background.
        Accepts: Path/to/Directory
